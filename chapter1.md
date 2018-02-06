@@ -1,6 +1,6 @@
 # Program Structure
 
-Variable 
+## Variables
 
 ```js
 // all valid words
@@ -9,7 +9,7 @@ const greeting = "Hello "; // const binding
 var name = "Ayda"; // pre-2015 JavaScript
 ```
 
-A full list of keywords
+## A full list of keywords
 
 ```js
 break case catch class const continue debugger default
@@ -19,16 +19,24 @@ new package private protected public return static super
 switch this throw true try typeof var void while with yield
 ```
 
-Functions
+## Functions
 
 ```js
 // pop-up function
 prompt("Enter passcode"); // not used much because no control
 // using example
 let theNumber = Number(prompt("Pick a number"));
-console.log("Your number is the square root of " +
-            theNumber * theNumber);
+if (!isNaN(theNumber)) {
+  console.log("Your number is the square root of " +
+              theNumber * theNumber);
+} else {
+  console.log("Hey. Why didn't you give me a number?");
+}nal (
 ```
+
+## Statements
+
+Conditional \(\``if`,`else`, and`switch`\) and looping \(`while`,`do`, and`for`\) statements.
 
 
 
