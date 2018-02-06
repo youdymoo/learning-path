@@ -102,7 +102,7 @@ for (var y = 0; y < size; y++) {
 console.log(board);
 ```
 
-## Functions
+# Functions
 
 Define
 
@@ -189,8 +189,6 @@ function findSolution(target) {
 console.log(findSolution(24));
 // → (((1 * 3) + 5) * 3)
 ```
-
-
 
 
 
