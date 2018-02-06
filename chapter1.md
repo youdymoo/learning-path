@@ -155,7 +155,7 @@ const square1 = (x) => { return x * x; };
 const square2 = x => x * x;
 ```
 
-Closures
+## Closures
 
 ```js
 function multiplier(factor) {
@@ -190,9 +190,7 @@ console.log(findSolution(24));
 // → (((1 * 3) + 5) * 3)
 ```
 
-```
 
-```
 
 
 
