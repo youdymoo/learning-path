@@ -19,7 +19,7 @@ new package private protected public return static super
 switch this throw true try typeof var void while with yield
 ```
 
-## Functions
+## Simple Functions
 
 ```js
 // pop-up function
@@ -100,6 +100,26 @@ for (var y = 0; y < size; y++) {
 }
 
 console.log(board);
+```
+
+## Functions
+
+Define
+
+```js
+const square = function(x) {
+  return x * x;
+};
+console.log(square(12));
+// → 144
+
+const makeNoise = function() {
+  console.log("Pling!");
+};
+makeNoise();
+// → Pling!
+
+// return <without an expression> would return undefined
 ```
 
 
