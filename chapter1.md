@@ -119,7 +119,79 @@ const makeNoise = function() {
 makeNoise();
 // → Pling!
 
+function greet(who) {
+  console.log("Hello " + who);
+}
+
 // return <without an expression> would return undefined
+```
+
+```js
+// scope
+let const // local to the block
+var // global scope if not in a function
+```
+
+```js
+// arrow functions
+const power = (base, exponent) => {
+  let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *= base;
+  }
+  return result;
+};
+
+function power(base, exponent = 2) {
+  let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *= base;
+  }
+  return result;
+}
+
+// same thing
+const square1 = (x) => { return x * x; };
+const square2 = x => x * x;
+```
+
+Closures
+
+```js
+function multiplier(factor) {
+  return number => number * factor;
+}
+
+let twice = multiplier(2);
+console.log(twice(5));
+// → 10
+```
+
+Recursive is generally 3 times slower than the looping version.
+
+A very elegant function.
+
+```js
+function findSolution(target) {
+  function find(current, history) {
+    if (current == target) {
+      return history;
+    } else if (current > target) {
+      return null;
+    } else {
+      return find(current + 5, `(${history} + 5)`) ||
+             find(current * 3, `(${history} * 3)`);
+    }
+  }
+  return find(1, "1");
+}
+
+console.log(findSolution(24));
+// → (((1 * 3) + 5) * 3)
+```
+
+```
+
 ```
 
 
