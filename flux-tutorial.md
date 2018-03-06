@@ -1,5 +1,7 @@
 # Introduction to the Flux Cluster
 
+Emailto: `hpc-support@umich.edu` (job number, pbs, module)
+
 - Mac: $ ssh flux-login.art-ts.umich.edu
 
 - Windows: use PuTTy; demo to follow
@@ -148,5 +150,52 @@ summary(iris)
    user  system elapsed
   0.179   0.038   0.301
   
-
 ```
+
+
+## Email:
+> PBS Job Id: 27829222.nyx.arc-ts.umich.edu
+>
+> Job Name:   iris_test
+>
+> Exec host:  nyx6185/2
+>
+> Begun execution
+>
+> PBS Job Id: 27829222.nyx.arc-ts.umich.edu
+
+> Job Name:   iris_test
+>
+> Exec host:  nyx6185/2
+>
+> Execution terminated
+>
+> Exit_status=0
+>
+> resources_used.cput=00:00:00
+>
+> resources_used.energy_used=0
+>
+> resources_used.mem=0kb
+>
+> resources_used.vmem=0kb
+>
+> resources_used.walltime=00:00:01
+>
+> req_information.task_count.0=1
+>
+> req_information.lprocs.0=1
+>
+> req_information.total_memory.0=1048576kb
+>
+> req_information.memory.0=1048576kb
+>
+> req_information.thread_usage_policy.0=allowthreads
+>
+> req_information.hostlist.0=nyx6185:ppn=1
+>
+> req_information.task_usage.0.task.0={"task":{"cpu_list":"3","mem_list":"0","cores":0,"threads":1,"host":"nyx6185"}}
+>
+> Error_Path: flux-login4.arc-ts.umich.edu:/home/youdymoo/IntroFlux/iris_test.o27829222
+>
+> Output_Path: flux-login4.arc-ts.umich.edu:/home/youdymoo/IntroFlux/iris_test.o27829222
