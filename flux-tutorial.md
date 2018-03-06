@@ -2,7 +2,7 @@
 
 - Mac: $ ssh flux-login.art-ts.umich.edu
 
--Windows: use PuTTy; demo to follow
+- Windows: use PuTTy; demo to follow
 
 > http://arc-ts.umich.edu/software/torque/
 >
