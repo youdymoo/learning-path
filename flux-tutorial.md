@@ -19,11 +19,11 @@ Portable Batch System - PBS
 #PBS -l nodes=1:ppn=1,mem=1gb,walltime=15:00
 ```
 
-nodes - num of nodes
+- nodes - num of nodes
 
-ppn - processor per node
+- ppn - processor per node
 
-mem - space of memory
+- mem - space of memory
 
 walltime - different from cpu time (per cpu time) 10:00:00:15 - 10 days and 15 seconds, faster for scheduler - 15 minutes
 
@@ -109,3 +109,44 @@ Running from /home/youdymoo/IntroFlux
 Hello, flux
 ```
 
+============Example with R==============
+```
+module keyword statistics # description of softwares with keyword
+module spider stata # particular package
+module available sas # abbr as av, (D) as default
+module load R
+module list # find what package has been loaded
+module swap R/3.4.1 # change the package version
+module purge # unload all the packages
+module av gromacs # gcc
+module load gromacs/5.1.2/openmpi/1.10.2/gcc # have save with modules
+```
+
+Never save R workspace
+
+```
+> nano iris.R
+library(datasets)
+data(iris)
+summary(iris)
+> R CMD BATCH iris.R
+> cat iris.Rout
+  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width
+ Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100
+ 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300
+ Median :5.800   Median :3.000   Median :4.350   Median :1.300
+ Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199
+ 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800
+ Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500
+       Species
+ setosa    :50
+ versicolor:50
+ virginica :50
+
+>
+> proc.time()
+   user  system elapsed
+  0.179   0.038   0.301
+  
+
+```
