@@ -6,6 +6,8 @@
 
 The standard output of JavaScript is `console.log(something).`
 
+Some code blocks are presented here.
+
 ```js
 // type: number 
 // JavaScript uses 64 bits to store numbers.
